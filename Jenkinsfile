@@ -55,6 +55,7 @@ pipeline {
               sh "make tag"
             }
           }
+          ###Adding comments
           container('maven') {
             sh 'mvn clean deploy'
 
